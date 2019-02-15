@@ -16,9 +16,11 @@ case=Case of Extension //upper,lower default case : (as passed into the string)
 Note :
 If you pass any color pass both , else it will load default for other which does'nt match color.
 
-Examples
+Examples (add server name and path before the url)
 
 /icongenerator/index.php
+
+/icongenerator/index.php?ext=mp3
 
 /icongenerator/index.php?ext=svg&case=upper&light=003870&dark=002550
 
