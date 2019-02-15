@@ -1,0 +1,28 @@
+<html>
+<style>
+iframe
+{
+  width:200px;
+  height:200px;
+  border:none;
+  outline:none;
+  margin-right:5px;
+  margin-bottom:5px;
+}
+iframe:hover
+{
+  outline:1px solid #000000;
+}
+</style>
+<body>
+<iframe src="index.php"></iframe>
+<iframe src="index.php?ext=Mp3"></iframe>
+<iframe src="index.php?ext=Txt&case=upper"></iframe>
+<iframe src="index.php?ext=MP4&case=upper&light=D00000&dark=700000"></iframe>
+<iframe src="index.php?ext=PDF&case=upper&light=00D000&dark=007000"></iframe>
+<iframe src="index.php?ext=XML&case=upper&light=0000D0&dark=000070"></iframe>
+<iframe src="index.php?ext=c&case=upper&light=D0D000&dark=707000"></iframe>
+<iframe src="index.php?ext=Cpp&case=upper&light=D000D0&dark=700070"></iframe>
+<iframe src="index.php?ext=JS&case=upper&light=00D0D0&dark=007070"></iframe>
+</body>
+</html>
