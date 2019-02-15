@@ -18,12 +18,12 @@ If you pass any color pass both , else it will load default for other which does
 
 Examples (add server name and path before the url)
 
-/icongenerator/index.php
+/index.php
 
-/icongenerator/index.php?ext=mp3
+/index.php?ext=mp3
 
-/icongenerator/index.php?ext=svg&case=upper&light=003870&dark=002550
+/index.php?ext=svg&case=upper&light=003870&dark=002550
 
-/icongenerator/index.php?ext=HTML&case=upper&light=00D0D0&dark=007070
+/index.php?ext=HTML&case=upper&light=00D0D0&dark=007070
 
-/icongenerator/index.php?ext=Cpp&light=D00000&dark=700000
+/index.php?ext=Cpp&light=D00000&dark=700000
