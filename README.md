@@ -6,8 +6,11 @@ Ignoring these would load default values
 Max length of extension is 4
 
 ext=File Extension default value : ?
+
 light=Light Color of Ribbon //hexcode (don't pass #) default color : #343C4F
+
 dark=Dark Color of Ribbon //hexcode (don't pass #) default color : #1E2537
+
 case=Case of Extension //upper,lower default case : (as passed into the string)
 
 Note :
