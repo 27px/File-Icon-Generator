@@ -27,3 +27,14 @@ Examples (add server name and path before the url)
 /index.php?ext=HTML&case=upper&light=00D0D0&dark=007070
 
 /index.php?ext=Cpp&light=D00000&dark=700000
+
+Use these urls in :
+
+iframe src
+
+img src
+
+div backgroun in css
+
+etc
+
