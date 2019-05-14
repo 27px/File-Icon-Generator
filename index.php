@@ -4,6 +4,7 @@
   //light=Light Color of Ribbon //hexcode
   //dark=Dark Color of Ribbon //hexcode
   //case=Case of Extension //upper,lower
+  //predefined=alpha //ribbon color depending on first alphabet of extension
   header("content-type:image/svg+xml");
   if(isset($_GET['ext'])&&($_GET['ext']!=""))
   {
@@ -47,21 +48,144 @@
     $extension="?";
     $x="55%";
   }
-  if(isset($_GET['light'])&&($_GET['light']!=""))
+  if(!(isset($_GET['predefined'])))
   {
-    $light="#".$_GET['light'];
+    if(isset($_GET['light'])&&($_GET['light']!=""))
+    {
+      $light="#".$_GET['light'];
+    }
+    else
+    {
+      $light="#343C4F";
+    }
+    if(isset($_GET['dark'])&&($_GET['dark']!=""))
+    {
+      $dark="#".$_GET['dark'];
+    }
+    else
+    {
+      $dark="#1E2537";
+    }
+  }
+  else if($_GET['predefined']=="alpha")
+  {
+    $ch=strtoupper($extension[0]);
+    switch($ch)
+    {
+      case 'A':
+        $light="#303030";
+        $dark="#606060";
+      break;
+      case 'B':
+        $light="#0000D0";
+        $dark="#203480";
+      break;
+      case 'C':
+        $light="#00D000";
+        $dark="#009000";
+      break;
+      case 'D':
+        $light="#FF0000";
+        $dark="#D00000";
+      break;
+      case 'E':
+        $light="#606060";
+        $dark="#909090";
+      break;
+      case 'F':
+        $light="#00FF00";
+        $dark="#00D000";
+      break;
+      case 'G':
+        $light="#D00000";
+        $dark="#900000";
+      break;
+      case 'H':
+        $light="#4CAF50";
+        $dark="#37803A";
+      break;
+      case 'I':
+        $light="#0000FF";
+        $dark="#0000C8";
+      break;
+      case 'J':
+        $light="#F88E87";
+        $dark="#FCCBC7";
+      break;
+      case 'K':
+        $light="#4848F4";
+        $dark="#2828A0";
+      break;
+      case 'L':
+        $light="#F44336";
+        $dark="#BA160A";
+      break;
+      case 'M':
+        $light="#D0D000";
+        $dark="#B0B000";
+      break;
+      case 'N':
+        $light="#C000C0";
+        $dark="#900090";
+      break;
+      case 'O':
+        $light="#00D0D0";
+        $dark="#00B0B0";
+      break;
+      case 'P':
+        $light="#4659BF";
+        $dark="#7986D0";
+      break;
+      case 'Q':
+        $light="#FF9800";
+        $dark="#FFBA55";
+      break;
+      case 'R':
+        $light="#AA6500";
+        $dark="#553300";
+      break;
+      case 'S':
+        $light="#7A0F07";
+        $dark="#290502";
+      break;
+      case 'T':
+        $light="#E0165B";
+        $dark="#A21042";
+      break;
+      case 'U':
+        $light="#C145D6";
+        $dark="#CA61DC";
+      break;
+      case 'V':
+        $light="#2D3A83";
+        $dark="#5F6FC7";
+      break;
+      case 'W':
+        $light="#008579";
+        $dark="#00C9B6";
+      break;
+      case 'X':
+        $light="#285C2A";
+        $dark="#19391A";
+      break;
+      case 'Y':
+        $light="#FF00FF";
+        $dark="#D000D0";
+      break;
+      case 'Z':
+        $light="#FF3D00";
+        $dark="#DD3500";
+      break;
+      default:
+        $light="#202020";
+        $dark="#101010";
+      break;
+    }
   }
   else
   {
-    $light="#343C4F";
-  }
-  if(isset($_GET['dark'])&&($_GET['dark']!=""))
-  {
-    $dark="#".$_GET['dark'];
-  }
-  else
-  {
-    $dark="#1E2537";
+    $light="#202020";
+    $dark="#101010";
   }
 ?>
 <?xml version="1.0"?>
@@ -70,8 +194,8 @@
 .paper
 {
   fill:#E0E0E0;
-  stroke:#B0B0B0;
-  stroke-width:1px;
+  stroke:#000000;
+  stroke-width:6px;
 }
 .fold,.shadow
 {
