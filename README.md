@@ -13,6 +13,8 @@ dark=Dark Color of Ribbon //hexcode (don't pass #) default color : #1E2537
 
 case=Case of Extension //upper,lower default case : (as passed into the string)
 
+predefined=alpha //Generates ribbon color depending on first letter of alphabet of extension , So always the color will be same for extensions which start with same alphabet.
+
 Note :
 If you pass any color pass both , else it will load default for other which does'nt match color.
 
@@ -34,7 +36,7 @@ iframe src
 
 img src
 
-div backgroun in css
+div background in css
 
 etc
 
