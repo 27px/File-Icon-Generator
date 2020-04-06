@@ -1,4 +1,4 @@
-# FileIcon
+# File Icon Generator
 Generate Dynamic File Icon with extension of file displayed, format SVG
 
 Pass the following variable values using get method to the php file to generate icon.
